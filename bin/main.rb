@@ -13,7 +13,5 @@ articles_csv << %w[Title Author Summary URL]
 
 article_list.each_with_index do |article, index|
   article = Article.new
-  puts article.article_info_arr(article_list[index])
-  puts ""
   articles_csv << article.article_info_arr(article_list[index])
 end
