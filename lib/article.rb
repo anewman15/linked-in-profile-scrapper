@@ -2,10 +2,7 @@ require 'nokogiri'
 require 'open-uri'
 
 class Article
-
-  def initialize
-    
-  end
+  def initialize; end
 
   def article_info_arr(article_list)
     [title(article_list), author(article_list), summary(article_list), article_url(article_list)]
@@ -26,7 +23,7 @@ class Article
   end
 
   def article_url(article_list)
-    link = article_list.css(".css-1l4spti a")
-    article_url = "https://www.nytimes.com/topic/subject/space-and-cosmos#{link.attr('href')}"
+    link = article_list.css('.css-1l4spti a')
+    "https://www.nytimes.com/topic/subject/space-and-cosmos#{link.attr('href')}"
   end
 end
