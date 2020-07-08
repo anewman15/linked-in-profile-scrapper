@@ -1,3 +1,5 @@
+#!/usr/bin/envy ruby
+
 require 'nokogiri'
 require 'open-uri'
 require 'csv'
