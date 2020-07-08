@@ -24,6 +24,6 @@ class Article
 
   def article_url(article_list)
     link = article_list.css('.css-1l4spti a')
-    "https://www.nytimes.com/topic/subject/space-and-cosmos#{link.attr('href')}"
+    "https://www.nytimes.com#{link.attr('href')}"
   end
 end
