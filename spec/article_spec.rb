@@ -8,11 +8,11 @@ describe Article do
 
     context 'when a li tag is given as an argument' do
       it 'returns an array with article info' do
-        title = 'Scrutinizing SpaceX, NASA Overlooked Some Boeing Software Problems'
-        author = 'Kenneth Chang'
-        summary = 'The agency identified the causes of mishaps in orbit during an uncrewed
-         test flight of its Starliner spacecraft in December.'
-        article_url = 'https://www.nytimes.com/2020/07/07/science/boeing-starliner-nasa.html'
+        title = li_tag.css('.e1xfvim30')[0].text
+        author = li_tag.css('.ea5icrr0 span')[0].text
+        summary = li_tag.css('.e1xfvim31')[0].text
+        link = li_tag.css('.css-1l4spti a')[0]
+        article_url = "https://www.nytimes.com#{link.attr('href')}"
         expect(article1.article_info_arr(li_tag)).to eq([title, author, summary, article_url])
       end
     end
