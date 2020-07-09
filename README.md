@@ -1,7 +1,7 @@
 # Web Scraper for NY Times Space and Cosmos Portal
 This is a Ruby web scraper that gets info about the latest list of articles from NY Times Space and Cosmos portal. The title, author name, summary and URL for each article are listed.
 
-## Game Screenshot
+## Scraped Articles Screenshot
 ![Scraped Articles Screenshot](./nytimes-articles-scraper-screenshot.png)
 
 ## Built With
