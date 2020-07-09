@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 require 'nokogiri'
 require 'open-uri'
 require 'csv'
