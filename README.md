@@ -16,6 +16,7 @@ This tool scrapes the first ten articles from the Space and Cosmos page of the N
 ### Deployment
 1. Open your terminal
 2. Clone this project running this command in your Terminal: git clone https://github.com/anewman15/nytimes-articles-scrapper.git
+3. Run "bundle install" to install all the gems and their dependencies
 
 ### Usage
 1. Run bin/main.rb in your terminal to start scraping the portal.
